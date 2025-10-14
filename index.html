@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
     <section>
         <nav>
-            <img src="./assets/FES.svg" alt="">
+            <img src="./assets/FES.svg"  class="logo" alt="">
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#discord">Discord</a></li>
@@ -16,63 +17,82 @@
             </ul>
         </nav>
         <header>
+            <div class="row">
             <div>
                 <h1> best place to learn</h1>
-                <p>Go from being a loser, to being a pro</p>
+                <p class="subheader">Go from being a loser, to being a pro</p>
                 <button> Get Started </button>
             </div>
             <figure>
                 <img src="./assets/laptop.png" alt= home page image">
             </figure>
+            </div>
         </header>
     </section>
 
     <main>
         <section id="about">
             <h2> About</h2>
-            <div>
-                <p> Growing up in a small town in ohio. I never thought Id see a computer.
+            <div class="row">
+                <div class="section__description">
+                <div class="section__description--wraper">
+                <p class="section__description--para"> Frontend Simplified is a community of people who are passionate about learning frontend development.
+                    We believe that anyone can learn to code, and we are here to help you on your journey.
+                </p>
+                <p class="section__description--para"> We offer a variety of resources to help you learn, including tutorials, articles, and a supportive community.
+                    Whether you are a complete beginner or an experienced developer, we have something for you.
+                </p>
+                <p class="section__description--para"> 
+                    Growing up in a small town in ohio. I never thought Id see a computer.
                     but then my Pappy, god bless him, sold his wifes left kidney to buy me a computer.
                 I think of him everytime I hear the click clack of my keys on this keyboard.</p>
             </div>
-            <figure>
+            <figure class="about__image--wrapper">
                 <img src="./assets/about.jpg" alt="">
             </figure>
+            </div>
+            </div>
         </section>
         <section id="discord">
             <h2>Discord</h2>
-            <figure>
+            <div class="row">
+            <div class="section__description">
+            <figure class="about__image--wrapper">
                 <img src="./assets/discord.png" alt="Discord">
             </figure>
-            <div>
-                <p> Join our discord to get help from other students, and from our mentors.
+            <div class="section__description--wraper">
+                <p class="section__description--para"> Join our discord to get help from other students, and from our mentors.
                     We have a great community of people who are willing to help you out.
                     We also have a lot of fun, and we would love to have you join us.
                 </p>
-                <p>
+                <p class="section__description--para">
                     We have a lot of channels for different topics, so you can find the help you need.
                     We also have a lot of fun events, like game nights, movie nights, and more.
                     So come join us, and be a part of our community.
                 </p>
                 <button> Join Discord </button>
             </div>
+            </div>
+        </div>
         </section>
         <section id="contact">
             <h2> contact</h2>
             <form action="">
                 <span> Email</span>
-                <input type="text" placeholder="Enter your email">
+                <input type="email" placeholder="Enter your email">
                 <span> Message</span>
-                <textarea type="text" placeholder="Enter your message"></textarea>
-                </form>
+                <textarea type="text" placeholder="Any Thoughts?"></textarea>
+            <button>Contact Us</button>
+        </form>
                 </section>
             </main>
+
             <footer>
-                <img src="./assets/FES.svg" alt="">
-                <div>
-                    <a href="#about">About</a>
-                    <a href="#discord">Discord</a>
-                    <a href="#contact">Contact</a>
+                <img class="footer__logo" src="./assets/FES.svg" alt="">
+                <div class="footer__links">
+                    <a class="footer__link" href="#about">About</a>
+                    <a class="footer__link" href="#discord">Discord</a>
+                    <a class="footer__link" href="#contact">Contact</a>
                 </div>
                 <p>Frontend Simplefied</p>
             </footer>

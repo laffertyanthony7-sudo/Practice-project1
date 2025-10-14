@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+ font-family: "Roboto", sans-serif;
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+
+nav {
+
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    background-color: #cafdff;
+}
+
+header{    
+    background-color: #cadcff;
+    height: calc(100vh - 70px);
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 72px;
+}
+
+p{
+    font-size: 36px;
+}
+
+.subheader{
+    font-size: 36px;
+    margin: 16px 0px 24px 0px;
+}
+
+button{
+    background-color: #05c7cf;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+a{
+    color: black;
+    font-size: 24px;
+    font-weight: 700;
+}
+.logo {
+    width: 300px;
+}
+
+ul{
+    display:flex;
+}
+
+li {
+    list-style:none;
+    padding-left: 16px;
+}
+
+
+.row {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about,
+#discord,
+#contact,
+#footer
+ {
+    padding: 48px 0px;
+}
+
+/*
+ABOUT
+*/
+
+
+
+#about{
+    background-color: #faffdc;
+}
+
+h2{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.section__description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__image--wrapper{
+    width: 40%;
+    padding: 0px 24px;
+}
+
+img{
+    width: 100%;
+}
+
+.section__description--wraper{
+    width: 60%;
+    padding: 0px 24px;
+}
+
+.section__description--para{
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
+/*
+DISCORD
+*/
+
+#discord {
+    padding: 48px 0px;
+    background-color:#39cde7;
+}
+
+/*
+contact
+*/
+
+#contact {
+    padding: 48px 0px;
+    background-color: #dcef9f;
+}
+
+form{
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+input, textarea{
+    padding: 6px 12px;
+    margin-bottom: 24px;
+    font-size: 20px;
+
+}
+
+/*
+footer
+*/
+
+footer{
+    background-color: #aaf1ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__logo{
+    max-width: 400px;
+    margin-bottom: 16px;
+}
+
+.footer__links{
+    margin-bottom: 32px;
+}
+.footer__links {
+    padding: 0 16px;
+}
