@@ -143,15 +143,16 @@ contact
     background-color: #dcef9f;
 }
 
-form{
+form {
     width: 100%;
     max-width: 600px;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    padding: 0 24px;
 }
 
-input, textarea{
+input, textarea {
     padding: 6px 12px;
     margin-bottom: 24px;
     font-size: 20px;
@@ -179,4 +180,65 @@ footer{
 }
 .footer__links {
     padding: 0 16px;
+}
+
+/*SMALL PHONES,,TABLETS, LARGE SMARTPHONES*/
+@media (max-width: 728px) {
+ .row{
+    flex-direction: column;
+ }
+
+ .home_desctripton{
+    margin-bottom: 24px;
+    display: flex;
+    font-display:column;
+    align-items: center;
+ }
+
+ .home_desctripton-button{
+    max-width: 240px;
+ }
+
+ h1{
+    text-align: center;
+    font-size: 60px;
+ }
+
+ .subheader{
+    text-align: center;
+    font-size: 28px;
+ }
+
+ ul{
+    display: none;
+ }
+
+ .section__description{
+    flex-direction: column;
+ }
+
+ .section__description--wraper{
+    width: 100%;
+ }
+
+.about__image--wrapper{
+    width: 100%;
+}
+
+#discord .section__description{
+    flex-direction: column-reverse;
+ }
+
+ footer{
+    padding: 48px 24px;
+ }
+ .footer_logo{
+    max-width: 360px;
+ }
+
+ .footer__links{
+    padding:0 4px;
+    font-size: 10px;
+    margin-bottom: 24px;
+ }
 }
